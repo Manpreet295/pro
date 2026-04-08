@@ -1,0 +1,54 @@
+<!-- Manpreet Kaur - COMP2132 Final Project - Hangman Game -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hangman.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>HANGMAN GAME</h1>
+            <p>Guess the word before the hangman is complete</p>
+        </header>
+        
+        <main>
+            <div class="game-container">
+                <div class="image-box">
+                    <img id="hangmanImg" src="images/clean_hangman0.png" alt="hangman">
+                </div>
+                
+                <div class="info-box">
+                    <p>Wrong guesses left: <span id="remaining">6</span> / 6</p>
+                    <p>Hint: <span id="hint"></span></p>
+                </div>
+                
+                <div class="word-box" id="wordBox"></div>
+                
+                <div class="guess-box">
+                    <input type="text" id="letterInput" maxlength="1" placeholder="A-Z">
+                    <button id="guessBtn">GUESS</button>
+                </div>
+                
+                <div class="guessed-box">
+                    <p>Used letters:</p>
+                    <div id="usedLetters"></div>
+                </div>
+                
+                <div id="gameMessage"></div>
+                
+                <button id="resetBtn">PLAY AGAIN</button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>COMP2132 - Hangman Project</p>
+        </footer>
+    </div>
+    
+    <script src="js/hangman.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+[
+    {
+        "word": "javascript",
+        "hint": "Programming language for websites"
+    },
+    {
+        "word": "hangman",
+        "hint": "Name of this guessing game"
+    },
+    {
+        "word": "computer",
+        "hint": "Device with a screen and keyboard"
+    },
+    {
+        "word": "keyboard",
+        "hint": "You type letters with this"
+    },
+    {
+        "word": "monitor",
+        "hint": "The screen that shows things"
+    },
+    {
+        "word": "mouse",
+        "hint": "Used to click on the screen"
+    },
+    {
+        "word": "internet",
+        "hint": "Worldwide network"
+    },
+    {
+        "word": "website",
+        "hint": "A page you visit online"
+    },
+    {
+        "word": "browser",
+        "hint": "Chrome or Firefox"
+    },
+    {
+        "word": "function",
+        "hint": "A block of code"
+    },
+    {
+        "word": "variable",
+        "hint": "Stores data in coding"
+    },
+    {
+        "word": "array",
+        "hint": "A list of items"
+    }
+]

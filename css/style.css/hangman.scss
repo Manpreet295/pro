@@ -1,0 +1,122 @@
+$purple: #4c2b5a;
+$teal: #b1d2cd;
+$dark: #242424;
+
+@mixin btn {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.game-container {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+}
+
+.image-box {
+    min-height: 280px;
+    
+    img {
+        max-width: 220px;
+        border: 2px solid $purple;
+        border-radius: 8px;
+    }
+}
+
+.info-box {
+    background-color: $teal;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 12px 0;
+    
+    p {
+        margin: 5px 0;
+    }
+}
+
+.word-box {
+    font-size: 2.2rem;
+    letter-spacing: 8px;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.guess-box {
+    margin: 15px 0;
+    
+    input {
+        padding: 6px;
+        font-size: 1.1rem;
+        width: 55px;
+        text-align: center;
+    }
+    
+    button {
+        @include btn;
+        background-color: $purple;
+        color: white;
+        margin-left: 8px;
+        
+        &:hover {
+            background-color: darken($purple, 10%);
+        }
+    }
+}
+
+.guessed-box {
+    background-color: #ddd;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 12px 0;
+    
+    #usedLetters {
+        min-height: 45px;
+        
+        span {
+            display: inline-block;
+            background-color: $purple;
+            color: white;
+            padding: 4px 8px;
+            margin: 2px;
+            border-radius: 3px;
+        }
+    }
+}
+
+#gameMessage {
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 6px;
+}
+
+#gameMessage.win {
+    background-color: #164b16;
+    color: white;
+}
+
+#gameMessage.lose {
+    background-color: #550000;
+    color: white;
+}
+
+#resetBtn {
+    @include btn;
+    background-color: $teal;
+    margin-top: 12px;
+    padding: 8px 22px;
+    
+    &:hover {
+        background-color: darken($teal, 12%);
+    }
+}
+
+.tempMsg {
+    min-height: 35px;
+    font-style: italic;
+    transition: opacity 0.4s;
+}
